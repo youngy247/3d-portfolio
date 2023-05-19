@@ -7,6 +7,7 @@ import {logo, menu, close} from '../assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('')
+  const [toggle, setToggle] = useState(true);
   return (
       <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
         <div className="w-full flex 
@@ -39,6 +40,15 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            <div className="sm:hidden flex flex-1 justify-end items-center">
+            <img 
+            src={menu} 
+            alt="menu"
+            className="w-[28px] h-[28px]
+            object-contain cursor pointer"
+              onClick={() => setToggle(!toggle)}
+            />
+            </div>
         </div>
       </nav>
   )
