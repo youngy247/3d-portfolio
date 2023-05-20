@@ -8,9 +8,25 @@ const Computers = () => {
   return (
     <mesh>
       <hemisphereLight intensity={0.15}
-        groundColor="black"
-      />
+        groundColor="black" />
+        <pointLight intensity={1} />
+        <primitive object={computer.scene}/>
     </mesh>
+  )
+}
+
+const ComputersCanvas = () => {
+  return (
+    <Canvas 
+    frameLoop="demand"
+    shadows
+    camera={{position: [20, 3, 5], fov: 25}}
+    gl={{preserveDrawingBuffer: true}}
+    >
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls />
+      </Suspense>
+    </Canvas>
   )
 }
 
