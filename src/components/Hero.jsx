@@ -1,7 +1,6 @@
 import {motion} from 'framer-motion';
 import {styles} from '../styles';
 import { ComputersCanvas } from './canvas';
-import SimpleModelCanvas from './canvas/Computers';
 
 const Hero = () => {
   return (
@@ -17,7 +16,7 @@ const Hero = () => {
         <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop user interfaces <br className="sm:block hidden"/>and web applications.</p>
       </div>
       </div>
-      <SimpleModelCanvas />
+      <ComputersCanvas />
     </section>
   )
 }
