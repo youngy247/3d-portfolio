@@ -13,6 +13,9 @@ const Ball = (props) => {
     floatIntensity={2}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
+      <mesh castShadow recieveShadow scale={2.75}>
+        <icosahedronGeometry args={[1, 1]}/>
+      </mesh>
     </Float>
   )
 }
