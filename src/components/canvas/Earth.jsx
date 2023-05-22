@@ -9,4 +9,16 @@ const Earth = () => {
   )
 }
 
+const EarthCanvas = () => {
+  return (
+    <Canvas
+      shadows
+      frameLoop='demand'
+      gl={{ preserveDrawingBuffer: true }}
+      camera={{  }}
+    >
+    </Canvas>
+  )
+}
+
 export default Earth
