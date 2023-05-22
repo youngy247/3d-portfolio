@@ -6,9 +6,6 @@ import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 
-// 9OlYZJ9TRqbNKU9zQ
-// template_d0ez60t
-// service_ds0lwsg
 
 const Contact = () => {
   const formRef = useRef()
@@ -26,7 +23,38 @@ const handleChange = (e) => {
 }
 
 const handleSubmit = (e) => {
+  e.preventDefault()
+  setLoading(true)
 
+
+  emailjs.send(
+    'service_ds0lwsg', 
+    'template_d0ez60t',
+    {
+      from_name: form.name,
+      to_name: 'Adam',
+      from_email: form.email,
+      to_email: 'adamyoungy678@gmail.com',
+      message: form.message,
+    },
+    '9OlYZJ9TRqbNKU9zQ'
+    )
+    .then(() => {
+      setLoading(false)
+      alert('Thank you, I will get back to you as soon as possible.')
+
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      })
+    }, (error) => {
+      setLoading(false)
+
+      console.log(error)
+
+      alert('Something went wrong.')
+    })
 }
 
   return (
