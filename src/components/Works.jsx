@@ -9,8 +9,10 @@ import { fadeIn, textVariant } from '../utils/motion'
 
 const Works = () => {
   return (
-    <div>Works</div>
+    <>
+
+    </>
   )
 }
 
-export default Works
+export default SectionWrapper(Works, "")
