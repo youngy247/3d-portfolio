@@ -16,6 +16,14 @@ const Works = () => {
         <h2 className={styles.sectionHeadText}
         >Projects.</h2>
       </motion.div>
+
+      <div className="w-full flex">
+        <motion.p 
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-3 text-secondary text-[17px] max-w-3x1 leading-[30px]">
+        My portfolio features a collection of projects that demonstrate my skills and expertise with real-world examples. Each project is accompanied by a brief description and includes links to the code repositories and live demos. These projects serve as evidence of my capability to tackle complex problems, proficiency with various technologies, and effective project management.
+        </motion.p>
+      </div>
     </>
   )
 }
