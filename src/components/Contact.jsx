@@ -30,4 +30,4 @@ const handleSubmit = (e) => {
   )
 }
 
-export default Contact
+export default SectionWrapper(Contact, "contact")
