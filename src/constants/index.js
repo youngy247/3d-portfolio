@@ -19,7 +19,7 @@ import {
     starbucks,
     tesla,
     shopify,
-    carrent,
+    wordle,
     jobit,
     tripguide,
     threejs,
@@ -171,25 +171,25 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Wordle Clone",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Responsive wordle game in vanilla JavaScript. Players guess hidden words with adaptive UI for enjoyable gaming on any device. Intuitive gameplay and appealing design create engaging experience for all.",
       tags: [
         {
-          name: "react",
+          name: "html",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "css",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "JavaScript",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: wordle,
+      source_code_link: "https://github.com/iO-Academy/2023-mar-wordle",
     },
     {
       name: "Job IT",
