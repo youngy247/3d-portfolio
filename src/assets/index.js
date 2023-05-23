@@ -25,7 +25,7 @@ import threejs from "./tech/threejs.svg";
 import io from "./company/io.png";
 import logic from "./company/logic.png";
 import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import cardiffmet from "./company/cardiffmet.png";
 
 import wordle from "./wordle.png";
 import jobit from "./jobit.png";
@@ -57,7 +57,7 @@ export {
   io,
   logic,
   starbucks,
-  tesla,
+  cardiffmet,
   wordle,
   jobit,
   tripguide,
