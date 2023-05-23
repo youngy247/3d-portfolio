@@ -29,7 +29,7 @@ import cardiffmet from "./company/cardiffmet.png";
 
 import wordle from "./wordle.png";
 import jobsearch from "./jobsearch.png";
-import tripguide from "./tripguide.png";
+import musicplayer from "./musicplayer.png";
 
 export {
   logo,
@@ -60,5 +60,5 @@ export {
   cardiffmet,
   wordle,
   jobsearch,
-  tripguide,
+  musicplayer,
 };

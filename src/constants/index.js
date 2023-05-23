@@ -21,7 +21,7 @@ import {
     logic,
     wordle,
     jobsearch,
-    tripguide,
+    musicplayer,
     threejs,
   } from "../assets";
   
@@ -214,25 +214,21 @@ import {
       live_code_link: "https://23-mar-wordgame.dev.io-academy.uk/",
     },
     {
-      name: "Trip Guide",
+      name: "Music Player API",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A rest API built in PHP for a pre-exisiting Music Player front-end. The API provides a wide range of functionalities that enable users to interact with the music player and enhance their music listening experience.",
       tags: [
         {
-          name: "nextjs",
+          name: "php",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "restapi",
           color: "green-text-gradient",
         },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: musicplayer,
+      source_code_link: "https://github.com/iO-Academy/23-mar-icantbelieveitsnotspotify",
       live_code_link: "https://23-mar-wordgame.dev.io-academy.uk/",
     },
   ];
