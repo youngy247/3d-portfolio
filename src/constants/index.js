@@ -20,7 +20,7 @@ import {
     cardiffmet,
     logic,
     wordle,
-    jobit,
+    jobsearch,
     tripguide,
     threejs,
   } from "../assets";
@@ -192,9 +192,9 @@ import {
       live_code_link: "https://23-mar-wordgame.dev.io-academy.uk/",
     },
     {
-      name: "Job IT",
+      name: "Job Search React App",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables users to search for job openings, view salaries for positions, and locate available jobs based on their job type.",
       tags: [
         {
           name: "react",
@@ -205,12 +205,12 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "bootstrap",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: jobsearch,
+      source_code_link: "https://github.com/iO-Academy/23-mar-icantbelieveitsnotmonster",
       live_code_link: "https://23-mar-wordgame.dev.io-academy.uk/",
     },
     {

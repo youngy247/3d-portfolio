@@ -28,7 +28,7 @@ import starbucks from "./company/starbucks.png";
 import cardiffmet from "./company/cardiffmet.png";
 
 import wordle from "./wordle.png";
-import jobit from "./jobit.png";
+import jobsearch from "./jobsearch.png";
 import tripguide from "./tripguide.png";
 
 export {
@@ -59,6 +59,6 @@ export {
   starbucks,
   cardiffmet,
   wordle,
-  jobit,
+  jobsearch,
   tripguide,
 };
