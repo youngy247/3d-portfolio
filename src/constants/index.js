@@ -18,7 +18,7 @@ import {
     io,
     starbucks,
     tesla,
-    shopify,
+    logic,
     wordle,
     jobit,
     tripguide,
@@ -135,6 +135,7 @@ import {
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
       points: [
+        
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
@@ -142,16 +143,14 @@ import {
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Transport Planner",
+      company_name: "Logic Freight",
+      icon: logic,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "July 2022 - March 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Proficient in computer and telephone systems including: Stirling transport system and Sage accounts.",
+        "Organised paperwork in paper audit trail and electronic filing systems using scanner.",
       ],
     },
     {

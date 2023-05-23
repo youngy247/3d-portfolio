@@ -23,7 +23,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import io from "./company/io.png";
-import shopify from "./company/shopify.png";
+import logic from "./company/logic.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
@@ -55,7 +55,7 @@ export {
   typescript,
   threejs,
   io,
-  shopify,
+  logic,
   starbucks,
   tesla,
   wordle,
