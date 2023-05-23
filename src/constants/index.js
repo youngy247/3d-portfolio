@@ -190,6 +190,7 @@ import {
       ],
       image: wordle,
       source_code_link: "https://github.com/iO-Academy/2023-mar-wordle",
+      live_code_link: "https://23-mar-wordgame.dev.io-academy.uk/",
     },
     {
       name: "Job IT",
@@ -211,6 +212,7 @@ import {
       ],
       image: jobit,
       source_code_link: "https://github.com/",
+      live_code_link: "",
     },
     {
       name: "Trip Guide",
@@ -232,6 +234,7 @@ import {
       ],
       image: tripguide,
       source_code_link: "https://github.com/",
+      live_code_link: "",
     },
   ];
   
