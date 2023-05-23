@@ -16,7 +16,7 @@ import {
     figma,
     docker,
     io,
-    starbucks,
+    crosskeys,
     cardiffmet,
     logic,
     wordle,
@@ -116,16 +116,17 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "BTEC Sport",
+      company_name: "Coleg Gwent - Crosskeys Campus",
+      icon: crosskeys,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "September 2017 - July 2019",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Learnt the principles of sports science, anatomy, physiology, nutrition, and fitness training.",
+        "Covered fundamentals of coaching principles and sports psychology.",
+        "Analyzed sports performance and applied sports analysis techniques.",
         "Participating in code reviews and providing constructive feedback to other developers.",
+        "While attending the Coleg Gwent rugby academy gained my first cap for Wales Rugby League at 16",
       ],
     },
     {
@@ -136,10 +137,11 @@ import {
       date: "Sept 2019 - July 2022",
       points: [
         
-        "Studied Strength, Conditioning And Massage for 3 years at Cardiff Met",
-        "Gained so and so qualifications",
-        "Gained grant for high scoring marks in year 1",
-        "Studied dissertation in 'Is Bilateral or Unilateral squat better correlated with change of direction speed with university athletes'",
+        "Principles of sports conditioning and performance enhancement techniques.",
+        "Assessment and analysis of movement patterns and biomechanics.",
+        "Application of manual therapy and corrective exercises for injury management.",
+        "Gained grant for high scoring mark in year 1",
+        "Carried out dissertation in 'Is Bilateral or Unilateral squat better correlated with change of direction speed with university athletes'",
       ],
     },
     {
@@ -149,8 +151,10 @@ import {
       iconBg: "#383E56",
       date: "July 2022 - March 2023",
       points: [
-        "Proficient in computer and telephone systems including: Stirling transport system and Sage accounts.",
-        "Organised paperwork in paper audit trail and electronic filing systems using scanner.",
+        "Utilizing transportation management systems to plan and schedule delivery routes for goods and products.",
+        "Addressing any potential issues or disruptions in transportation, such as traffic delays or unforeseen circumstances, by implementing contingency plans and making real-time adjustments.",
+        "Identifying areas for process improvement and implementing strategies to enhance efficiency and cost-effectiveness.",
+        "Maintaining strong relationships with carriers, negotiating contracts, and managing service level agreements.",
       ],
     },
     {

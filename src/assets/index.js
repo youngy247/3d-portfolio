@@ -24,7 +24,7 @@ import threejs from "./tech/threejs.svg";
 
 import io from "./company/io.png";
 import logic from "./company/logic.png";
-import starbucks from "./company/starbucks.png";
+import crosskeys from "./company/crosskeys.png";
 import cardiffmet from "./company/cardiffmet.png";
 
 import wordle from "./wordle.png";
@@ -56,7 +56,7 @@ export {
   threejs,
   io,
   logic,
-  starbucks,
+  crosskeys,
   cardiffmet,
   wordle,
   jobsearch,
