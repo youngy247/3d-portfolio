@@ -199,7 +199,7 @@ import {
     {
       name: "Job Search React App",
       description:
-        "Web application that enables users to search for job openings, view salaries for positions, and locate available jobs based on their job type.",
+        "A web application for users in their job search journey. With a sleek React/Bootstrap front-end, it offers a user-friendly interface for exploring and discovering customized job openings tailored to the user.",
       tags: [
         {
           name: "react",
@@ -239,7 +239,7 @@ import {
     {
       name: "Nexus Chatbot",
       description:
-        "An AI-powered chatbot inspired by ChatGPT that connects to the OpenAI API. Built using JavaScript on the client side and Node.js with Express.js on the server side. ",
+        "An AI-powered chatbot inspired by ChatGPT that connects to the OpenAI API currently in beta. Built using JavaScript on the client side and Node.js with Express.js on the server side. ",
       tags: [
         {
           name: "JavaScript",
