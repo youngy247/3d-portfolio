@@ -30,6 +30,7 @@ import cardiffmet from "./company/cardiffmet.png";
 import wordle from "./wordle.png";
 import jobsearch from "./jobsearch.png";
 import musicplayer from "./musicplayer.png";
+import nexus from "./nexus.png";
 
 export {
   logo,
@@ -61,4 +62,5 @@ export {
   wordle,
   jobsearch,
   musicplayer,
+  nexus,
 };

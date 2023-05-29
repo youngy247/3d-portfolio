@@ -22,6 +22,7 @@ import {
     wordle,
     jobsearch,
     musicplayer,
+    nexus,
     threejs,
   } from "../assets";
   
@@ -187,7 +188,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "JavaScript",
+          name: "javascript",
           color: "pink-text-gradient",
         },
       ],
@@ -234,6 +235,28 @@ import {
       image: musicplayer,
       source_code_link: "https://github.com/iO-Academy/23-mar-icantbelieveitsnotspotify",
       live_code_link: "https://23-mar-wordgame.dev.io-academy.uk/",
+    },
+    {
+      name: "Nexus Chatbot",
+      description:
+        "An AI-powered chatbot inspired by ChatGPT that connects to the OpenAI API. Built using JavaScript on the client side and Node.js with Express.js on the server side. ",
+      tags: [
+        {
+          name: "JavaScript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "node",
+          color: "green-text-gradient",
+        },
+        {
+          name: "express",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: nexus,
+      source_code_link: "https://github.com/youngy247/nexus-bot",
+      live_code_link: "https://nexusbot-beta.netlify.app/",
     },
   ];
   
