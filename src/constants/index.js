@@ -239,7 +239,7 @@ import {
     {
       name: "Nexus Chatbot",
       description:
-        "An AI-powered chatbot inspired by ChatGPT that connects to the OpenAI API currently in beta. Built using JavaScript on the client side and Node.js with Express.js on the server side. ",
+        "An AI-powered chatbot inspired by ChatGPT that connects to the OpenAI API currently in beta training to be my personal assistant. Built using JavaScript on the client side and Node.js with Express.js on the server side. ",
       tags: [
         {
           name: "JavaScript",
