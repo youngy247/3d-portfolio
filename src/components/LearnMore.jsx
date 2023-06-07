@@ -17,7 +17,7 @@ const LearnMore = () => {
         <iframe
           className="w-5/6 h-3/4"
           src="https://nexusbot-beta.netlify.app/"
-          title="W3Schools Free Online Web Tutorials"
+          title="Adam's personal assistant chatbot Nexus"
         ></iframe>
       </div>
     </>
