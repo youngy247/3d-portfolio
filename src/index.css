@@ -25,6 +25,18 @@
   justify-content: center;
 }
 
+.modal {
+  width: clamp(50%, 700px, 90%);
+  height: min(50%, 300px);
+
+  margin: auto;
+  padding: 0 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
