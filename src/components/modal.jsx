@@ -29,6 +29,9 @@ const Modal = ({ handleClose, text }) => {
                 onClick={(e) => e.stopPropagation()}
                 className="modal orange-gradient"
                 variants={dropIn}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
             >
 
             </motion.div>
