@@ -1,10 +1,12 @@
 import { useState, useRef } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import Modal from './modal'
+import '../index.css'
 
 
 const Contact = () => {
@@ -15,6 +17,10 @@ const Contact = () => {
     message: '',
   })
 const [loading, setLoading] = useState(false)
+const [modalOpen, setModalOpen] = useState(false)
+
+const close = () => setModalOpen(false)
+const open = () => setModalOpen(true)
 
 const handleChange = (e) => {
   const { name, value } = e.target
@@ -24,37 +30,39 @@ const handleChange = (e) => {
 
 const handleSubmit = (e) => {
   e.preventDefault()
-  setLoading(true)
+  // setLoading(true)
+  open()
 
+  // emailjs.send(
+  //   'service_ds0lwsg', 
+  //   'template_d0ez60t',
+  //   {
+  //     from_name: form.name,
+  //     to_name: 'Adam',
+  //     from_email: form.email,
+  //     to_email: 'adamyoungy678@gmail.com',
+  //     message: form.message,
+  //   },
+  //   '9OlYZJ9TRqbNKU9zQ'
+  //   )
+    // .then(() => {
+    //   setLoading(false)
+    //   // alert('Thank you, I will get back to you as soon as possible.')
 
-  emailjs.send(
-    'service_ds0lwsg', 
-    'template_d0ez60t',
-    {
-      from_name: form.name,
-      to_name: 'Adam',
-      from_email: form.email,
-      to_email: 'adamyoungy678@gmail.com',
-      message: form.message,
-    },
-    '9OlYZJ9TRqbNKU9zQ'
-    )
-    .then(() => {
-      setLoading(false)
-      alert('Thank you, I will get back to you as soon as possible.')
+    //   setForm({
+    //     name: '',
+    //     email: '',
+    //     message: '',
+    //   })
 
-      setForm({
-        name: '',
-        email: '',
-        message: '',
-      })
-    }, (error) => {
-      setLoading(false)
+    //   open() // Open the modal after successful submission
+    // }, (error) => {
+    //   setLoading(false)
 
-      console.log(error)
+    //   console.log(error)
 
-      alert('Something went wrong.')
-    })
+    //   alert('Something went wrong.')
+    // })
 }
 
   return (
@@ -65,7 +73,7 @@ const handleSubmit = (e) => {
       >
       <p className={styles.sectionSubText}>Get in touch</p>
       <h3 className={styles.sectionHeadText}>Contact.</h3>
-
+      
       <form
         ref={formRef}
         onSubmit={handleSubmit}
@@ -127,18 +135,29 @@ const handleSubmit = (e) => {
         whileTap={{ scale: 0.9 }}
         type="submit"
         className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+        // onClick={() => (modalOpen ? close() : open())}
       >
         {loading ? 'Sending...' : 'Send'}
       </motion.button>
       </form>
-
+      
       </motion.div>
+      
       <motion.div 
       variants={slideIn('right', "tween", 0.2, 1)}
       className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
       </motion.div>
+
+      <AnimatePresence
+      initial={false}
+      exitbeforeEnter={true}
+      onExitComplete={() => null}
+      >
+      {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+
+      </AnimatePresence>
     </div>
   )
 }
