@@ -99,6 +99,7 @@ const handleSubmit = (e) => {
       <h3 className={styles.sectionHeadText}>Contact.</h3>
       
       <form
+        id="form"
         ref={formRef}
         onSubmit={handleSubmit}
         className="mt-12 flex flex-col gap-8"
