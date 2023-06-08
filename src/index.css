@@ -51,6 +51,16 @@
   background: var(--gradient3);
 }
 
+.modal-text h3 {
+              text-align: center;
+              color: #ffaa00;
+              text-transform: none;
+              font-weight: 400;
+              margin: auto auto 1.2rem 0;
+              font-family: "Montserrat";
+              font-size: 300%;     
+}
+
 .close-button {
   padding: 0 2rem;
   height: 2.5rem;
