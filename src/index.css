@@ -39,7 +39,7 @@
   height: min(50%, 300px);
 
   @media (max-width: 768px) {
-    height: clamp(30%, 520px, 90vh); 
+    height: clamp(30%, 550px, 90vh); 
   }
 
   z-index: 20;
@@ -86,7 +86,7 @@ textarea {
   box-shadow: 1px 1px 15px #03030399;
 
   @media (max-width: 768px) {
-    height: 3.15rem; /* Adjust the value as needed */
+    height: 3.3rem; /* Adjust the value as needed */
   }
 }
 
