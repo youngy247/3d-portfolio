@@ -155,7 +155,7 @@ const handleSubmit = (e) => {
       exitbeforeEnter={true}
       onExitComplete={() => null}
       >
-      {modalOpen && <Modal modalOpen={modalOpen} handleClose={close} />}
+      {modalOpen && <Modal text={form.name} handleClose={close} />}
 
       </AnimatePresence>
     </div>
