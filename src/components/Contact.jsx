@@ -19,6 +19,7 @@ const Contact = () => {
 const [loading, setLoading] = useState(false)
 const [modalOpen, setModalOpen] = useState(false)
 const [submittedName, setSubmittedName] = useState('');
+const [submittedEmail, setSubmittedEmail] = useState('');
 
 const close = () => setModalOpen(false)
 const open = () => setModalOpen(true)
@@ -49,6 +50,7 @@ const handleSubmit = (e) => {
     .then(
       () => {
         setSubmittedName(form.name);
+        setSubmittedEmail(form.email);
         open()
 
         setForm({
@@ -160,7 +162,7 @@ const handleSubmit = (e) => {
       exitbeforeEnter={true}
       onExitComplete={() => null}
       >
-      {modalOpen && <Modal name={submittedName} handleClose={close} />}
+      {modalOpen && <Modal name={submittedName} email={submittedEmail} handleClose={close} />}
 
       </AnimatePresence>
     </div>
