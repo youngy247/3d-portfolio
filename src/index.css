@@ -51,6 +51,10 @@
   background: var(--gradient3);
 }
 
+textarea {
+  resize: none;
+}
+
 .modal-text h3 {
               text-align: center;
               color: #ffaa00;
