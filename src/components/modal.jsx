@@ -34,9 +34,13 @@ const Modal = ({ handleClose, text }) => {
                 animate="visible"
                 exit="exit"
             >
-            <button className="close-button" onClick={handleClose}>
-          Close
-        </button>
+                <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="close-button" 
+                onClick={handleClose}>
+                    Close
+                </motion.button>
             </motion.div>
          </Backdrop>
     )
