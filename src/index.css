@@ -51,6 +51,18 @@
   background: var(--gradient);
 }
 
+.close-button {
+  padding: 0 2rem;
+  height: 2.5rem;
+  margin: 2rem auto 1rem 0;
+  background: #101111;
+  /* border: 1px dashed #9a9a9a99; */
+  color: #ffaa00;
+  border-radius: 4px;
+  transition: background ease 400ms;
+  box-shadow: 1px 1px 15px #03030399;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
