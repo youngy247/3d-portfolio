@@ -41,9 +41,19 @@ const Modal = ({ handleClose, text }) => {
                 onClick={handleClose}>
                     Close
                 </motion.button>
+                <ModalText text={text} />
             </motion.div>
          </Backdrop>
     )
 }
+
+const ModalText = ({ text }) => (
+    <div className="modal-text">
+      <h3>Hello {text} 👋</h3>
+      <h5>
+        Thanks for the email I will get back to you as soon as I can!
+      </h5>
+    </div>
+  );
 
 export default Modal
