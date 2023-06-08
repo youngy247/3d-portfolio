@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import Backdrop from './backdrop'
+import '../index.css'
 
 const dropIn = {
     hidden: {
@@ -12,7 +13,7 @@ const dropIn = {
         transition: {
             duration: 0.1,
             type: "spring",
-            damping: 0,
+            damping: 25,
             stiffness: 500,
         }
     },
@@ -33,9 +34,11 @@ const Modal = ({ handleClose, text }) => {
                 animate="visible"
                 exit="exit"
             >
-
+            <button className="close-button" onClick={handleClose}>
+          Close
+        </button>
             </motion.div>
-        </Backdrop>
+         </Backdrop>
     )
 }
 
