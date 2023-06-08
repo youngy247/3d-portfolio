@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import emailjs from '@emailjs/browser'
 import { styles } from '../styles'
@@ -23,6 +23,22 @@ const [submittedEmail, setSubmittedEmail] = useState('');
 
 const close = () => setModalOpen(false)
 const open = () => setModalOpen(true)
+
+const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 500px)');
+
+    setIsMobile(mediaQuery.matches);
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    mediaQuery.addEventListener('change',handleMediaQueryChange);
+    return () => {
+      mediaQuery.removeEventListener('change',handleMediaQueryChange);
+    };
+  }, []);
 
 const handleChange = (e) => {
   const { name, value } = e.target
@@ -150,7 +166,20 @@ const handleSubmit = (e) => {
         {loading ? 'Sending...' : 'Send'}
       </motion.button>
       </form>
-      
+      <AnimatePresence
+      initial={false}
+      exitbeforeEnter={true}
+      onExitComplete={() => null}
+      >
+      {isMobile && modalOpen && 
+      <Modal 
+      name={submittedName} 
+      email={submittedEmail} 
+      handleClose={close} 
+      mobile={isMobile}
+      />}
+
+      </AnimatePresence>
       </motion.div>
       
       <motion.div 
@@ -165,7 +194,13 @@ const handleSubmit = (e) => {
       exitbeforeEnter={true}
       onExitComplete={() => null}
       >
-      {modalOpen && <Modal name={submittedName} email={submittedEmail} handleClose={close} />}
+      {!isMobile && modalOpen && 
+      <Modal 
+      name={submittedName} 
+      email={submittedEmail} 
+      handleClose={close} 
+      mobile={isMobile}
+      />}
 
       </AnimatePresence>
     </div>
