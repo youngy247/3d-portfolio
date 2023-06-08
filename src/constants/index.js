@@ -44,7 +44,7 @@ import {
       title: "Learn More"
     },
     {
-      id: "contact",
+      id: "form",
       title: "Contact",
     },
   ];
