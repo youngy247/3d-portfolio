@@ -60,13 +60,14 @@ textarea {
               color: #ffaa00;
               text-transform: none;
               font-weight: 400;
-              margin: auto auto 1.4rem 0;
+              margin: auto auto 1.9rem 0;
               font-family: "Montserrat";
               font-size: 300%;     
 }
 
 .modal-text h5 {
   font-size: 110%;
+  text-align: center;
 }
 
 .close-button {
