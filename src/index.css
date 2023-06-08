@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --dark: #101315;
+  --light: #eeeeee;
+  --gradient: linear-gradient(10deg, #ffaa00, #ff6a00);
+  --gradient2: linear-gradient(15deg, #04ea00, #00d17d);
+  --gradient3: linear-gradient(15deg, #b648ff, #ef5dff);
+  font-size: 1rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,12 +38,17 @@
   width: clamp(50%, 700px, 90%);
   height: min(50%, 300px);
 
+  z-index: 20;
   margin: auto;
   padding: 0 2rem;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.orange-gradient {
+  background: var(--gradient);
 }
 
 .hash-span {
