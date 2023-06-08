@@ -118,6 +118,7 @@ const handleSubmit = (e) => {
           placeholder:text-secondary
           text-white rounded-lg outlined-none
           border-none font-medium"
+          maxLength={45}
         />
 
       </label>
@@ -136,6 +137,7 @@ const handleSubmit = (e) => {
           placeholder:text-secondary
           text-white rounded-lg outlined-none
           border-none font-medium"
+          maxLength={55}
         />
 
       </label>
@@ -154,6 +156,7 @@ const handleSubmit = (e) => {
           placeholder:text-secondary
           text-white rounded-lg outlined-none
           border-none font-medium"
+          maxLength={2000}
         />
 
       </label>
