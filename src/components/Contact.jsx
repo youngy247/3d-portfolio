@@ -92,6 +92,7 @@ const handleSubmit = (e) => {
         Your Name
         </span>
         <input 
+          required
           type="text"
           name="name"
           value={form.name}
@@ -109,6 +110,7 @@ const handleSubmit = (e) => {
         Your Email
         </span>
         <input 
+          required
           type="email"
           name="email"
           value={form.email}
@@ -126,6 +128,7 @@ const handleSubmit = (e) => {
         Your Message
         </span>
         <textarea 
+          required
           rows="7"
           name="message"
           value={form.message}
