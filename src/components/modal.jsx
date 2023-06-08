@@ -23,7 +23,7 @@ const dropIn = {
     },
 }
 
-const Modal = ({ handleClose, text }) => {
+const Modal = ({ handleClose, name }) => {
     return(
         <Backdrop onClick={handleClose}>
             <motion.div
@@ -41,15 +41,15 @@ const Modal = ({ handleClose, text }) => {
                 onClick={handleClose}>
                     Close
                 </motion.button>
-                <ModalText text={text} />
+                <ModalText name={name} />
             </motion.div>
          </Backdrop>
     )
 }
 
-const ModalText = ({ text }) => (
+const ModalText = ({ name }) => (
     <div className="modal-text">
-      <h3>Hello {text} 👋</h3>
+      <h3>Hello {name} 👋</h3>
       <h5>
         Thanks for the email I will get back to you as soon as I can!
       </h5>
