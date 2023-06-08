@@ -37,9 +37,9 @@
 .modal {
   width: clamp(50%, 700px, 90%);
   height: min(50%, 300px);
-  
+
   @media (max-width: 768px) {
-    height: clamp(30%, 400px, 90vh); 
+    height: clamp(30%, 475px, 90vh); 
   }
 
   z-index: 20;
@@ -84,6 +84,10 @@ textarea {
   border-radius: 4px;
   transition: background ease 400ms;
   box-shadow: 1px 1px 15px #03030399;
+
+  @media (max-width: 768px) {
+    height: 4.5rem; /* Adjust the value as needed */
+  }
 }
 
 .hash-span {
