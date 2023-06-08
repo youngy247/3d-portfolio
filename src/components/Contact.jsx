@@ -18,6 +18,7 @@ const Contact = () => {
   })
 const [loading, setLoading] = useState(false)
 const [modalOpen, setModalOpen] = useState(false)
+const [submittedName, setSubmittedName] = useState('');
 
 const close = () => setModalOpen(false)
 const open = () => setModalOpen(true)
@@ -29,41 +30,46 @@ const handleChange = (e) => {
 }
 
 const handleSubmit = (e) => {
-  e.preventDefault()
-  // setLoading(true)
-  open()
+  e.preventDefault();
+  setLoading(true);
 
-  // emailjs.send(
-  //   'service_ds0lwsg', 
-  //   'template_d0ez60t',
-  //   {
-  //     from_name: form.name,
-  //     to_name: 'Adam',
-  //     from_email: form.email,
-  //     to_email: 'adamyoungy678@gmail.com',
-  //     message: form.message,
-  //   },
-  //   '9OlYZJ9TRqbNKU9zQ'
-  //   )
-    // .then(() => {
-    //   setLoading(false)
-    //   // alert('Thank you, I will get back to you as soon as possible.')
+  emailjs
+    .send(
+      'service_ds0lwsg',
+      'template_d0ez60t',
+      {
+        from_name: form.name,
+        to_name: 'Adam',
+        from_email: form.email,
+        to_email: 'adamyoungy678@gmail.com',
+        message: form.message,
+      },
+      '9OlYZJ9TRqbNKU9zQ'
+    )
+    .then(
+      () => {
+        setSubmittedName(form.name);
+        open()
 
-    //   setForm({
-    //     name: '',
-    //     email: '',
-    //     message: '',
-    //   })
+        setForm({
+          name: '',
+          email: '',
+          message: '',
+        });
 
-    //   open() // Open the modal after successful submission
-    // }, (error) => {
-    //   setLoading(false)
+        setLoading(false);
 
-    //   console.log(error)
+      },
+      (error) => {
+        setLoading(false);
 
-    //   alert('Something went wrong.')
-    // })
-}
+        console.log(error);
+
+        alert('Something went wrong.');
+      }
+    );
+};
+
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -135,7 +141,6 @@ const handleSubmit = (e) => {
         whileTap={{ scale: 0.9 }}
         type="submit"
         className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
-        // onClick={() => (modalOpen ? close() : open())}
       >
         {loading ? 'Sending...' : 'Send'}
       </motion.button>
@@ -155,7 +160,7 @@ const handleSubmit = (e) => {
       exitbeforeEnter={true}
       onExitComplete={() => null}
       >
-      {modalOpen && <Modal text={form.name} handleClose={close} />}
+      {modalOpen && <Modal name={submittedName} handleClose={close} />}
 
       </AnimatePresence>
     </div>
