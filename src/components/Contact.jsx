@@ -145,7 +145,7 @@ const handleSubmit = (e) => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         type="submit"
-        className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+        className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl violet-gradient"
       >
         {loading ? 'Sending...' : 'Send'}
       </motion.button>
