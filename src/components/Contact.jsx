@@ -51,19 +51,17 @@ const handleSubmit = (e) => {
   e.preventDefault();
   setLoading(true);
 
-  emailjs
-    .send(
-      "service_ds0lwsg",
-      "template_d0ez60t",
-      {
-        from_name: form.name,
-        to_name: 'Adam',
-        from_email: form.email,
-        to_email: 'adamyoungy678@gmail.com',
-        message: form.message,
-      },
-      "9OlYZJ9TRqbNKU9zQ"
-    )
+  fetch('https://portfolio-backend-3jb1.onrender.com', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      name: form.name,
+      email: form.email,
+      message: form.message,
+    }),
+  })
     .then(
       () => {
         setSubmittedName(form.name);
