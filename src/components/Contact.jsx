@@ -7,7 +7,6 @@ import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 import Modal from './modal'
 import '../index.css'
-import { EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, EMAIL_USER_ID } from './env.jsx';
 
 
 
