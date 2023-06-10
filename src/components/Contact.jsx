@@ -52,8 +52,8 @@ const handleSubmit = (e) => {
 
   emailjs
     .send(
-      'service_ds0lwsg',
-      'template_d0ez60t',
+      process.env.EMAIL_SERVICE_ID,
+      process.env.EMAIL_TEMPLATE_ID,
       {
         from_name: form.name,
         to_name: 'Adam',
@@ -61,7 +61,7 @@ const handleSubmit = (e) => {
         to_email: 'adamyoungy678@gmail.com',
         message: form.message,
       },
-      '9OlYZJ9TRqbNKU9zQ'
+      process.env.EMAIL_USER_ID
     )
     .then(
       () => {
@@ -91,7 +91,8 @@ const handleSubmit = (e) => {
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
-      <motion.div
+      <motion.div 
+      id="form"
       variants={slideIn('left', "tween", 0.2, 1)}
       className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
@@ -99,7 +100,6 @@ const handleSubmit = (e) => {
       <h3 className={styles.sectionHeadText}>Contact.</h3>
       
       <form
-        id="form"
         ref={formRef}
         onSubmit={handleSubmit}
         className="mt-12 flex flex-col gap-8"
