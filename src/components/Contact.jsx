@@ -7,6 +7,8 @@ import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 import Modal from './modal'
 import '../index.css'
+import { EMAIL_SERVICE_ID, EMAIL_TEMPLATE_ID, EMAIL_USER_ID } from './env.jsx';
+
 
 
 const Contact = () => {
@@ -23,6 +25,7 @@ const [submittedEmail, setSubmittedEmail] = useState('');
 
 const close = () => setModalOpen(false)
 const open = () => setModalOpen(true)
+
 
 const [isMobile, setIsMobile] = useState(false);
 
@@ -52,8 +55,8 @@ const handleSubmit = (e) => {
 
   emailjs
     .send(
-      process.env.REACT_APP_EMAIL_SERVICE_ID,
-      process.env.REACT_APP_EMAIL_TEMPLATE_ID,
+      EMAIL_SERVICE_ID,
+      EMAIL_TEMPLATE_ID,
       {
         from_name: form.name,
         to_name: 'Adam',
@@ -61,7 +64,7 @@ const handleSubmit = (e) => {
         to_email: 'adamyoungy678@gmail.com',
         message: form.message,
       },
-      process.env.REACT_APP_EMAIL_USER_ID
+      EMAIL_USER_ID
     )
     .then(
       () => {
