@@ -52,8 +52,8 @@ const handleSubmit = (e) => {
 
   emailjs
     .send(
-      process.env.EMAIL_SERVICE_ID,
-      process.env.EMAIL_TEMPLATE_ID,
+      process.env.REACT_APP_EMAIL_SERVICE_ID,
+      process.env.REACT_APP_EMAIL_TEMPLATE_ID,
       {
         from_name: form.name,
         to_name: 'Adam',
@@ -61,7 +61,7 @@ const handleSubmit = (e) => {
         to_email: 'adamyoungy678@gmail.com',
         message: form.message,
       },
-      process.env.EMAIL_USER_ID
+      process.env.REACT_APP_EMAIL_USER_ID
     )
     .then(
       () => {
