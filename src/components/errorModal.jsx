@@ -29,7 +29,7 @@ const ErrorModal = ({ handleClose, name }) => {
         <Backdrop onClick={handleClose}>
             <motion.div
                 onClick={(e) => e.stopPropagation()}
-                className="modal purple-gradient"
+                className="error-modal-container error-modal"
                 variants={dropIn}
                 initial="hidden"
                 animate="visible"
@@ -50,12 +50,24 @@ const ErrorModal = ({ handleClose, name }) => {
 
 const ErrorModalText = ({ name }) => (
     <div className="modal-text">
-      <h3>Hello {name} 👋</h3>
-      <h5>
-      Sorry Adam is unable to take emails at this time. 
+      <h3>Notice ⚠️</h3>
+      <h5 className="mt-4 mb-4">
+        Sorry {name} I am unable to take emails at this time. Please feel free to reach out in alternative ways below:
       </h5>
+      <div className="flex justify-center gap-6">
+        <a href="#" target="_blank" className="text-black text-4xl">
+          <i className="fa-brands fa-slack"></i>
+        </a>
+        <a href="https://github.com/youngy247" target="_blank" className="text-black text-4xl">
+          <i className="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/adam-young-684319203/" target="_blank" className="text-black text-4xl">
+          <i className="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
     </div>
   );
+  
 
 export default ErrorModal
 
