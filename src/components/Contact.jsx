@@ -47,6 +47,7 @@ const handleChange = (e) => {
   setForm({ ...form, [name]: value })
 }
 
+
 const handleSubmit = (e) => {
   e.preventDefault();
   setLoading(true);
@@ -62,30 +63,30 @@ const handleSubmit = (e) => {
       message: form.message,
     }),
   })
-    .then(
-      () => {
+    .then((response) => {
+      if (response.ok) {
         setSubmittedName(form.name);
         setSubmittedEmail(form.email);
-        open()
+        open();
 
         setForm({
           name: '',
           email: '',
           message: '',
         });
-
-        setLoading(false);
-
-      },
-      (error) => {
-        setLoading(false);
-
-        console.log(error);
-
-        alert('Something went wrong.');
+      } else {
+        throw new Error('Failed to send email.');
       }
-    );
+    })
+    .catch((error) => {
+      console.log(error);
+      alert('Failed to send email. Please try again later.');
+    })
+    .finally(() => {
+      setLoading(false);
+    });
 };
+
 
 
   return (
