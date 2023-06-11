@@ -6,6 +6,7 @@ import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 import Modal from './modal'
 import '../index.css'
+import ErrorModal from './errorModal'
 
 
 const Contact = () => {
@@ -17,11 +18,15 @@ const Contact = () => {
   })
 const [loading, setLoading] = useState(false)
 const [modalOpen, setModalOpen] = useState(false)
+const [errorModal, setErrorModal] = useState(false)
 const [submittedName, setSubmittedName] = useState('');
 const [submittedEmail, setSubmittedEmail] = useState('');
 
 const close = () => setModalOpen(false)
 const open = () => setModalOpen(true)
+
+const closeError = () => setErrorModal(false)
+const openError = () => setErrorModal(true)
 
 
 const [isMobile, setIsMobile] = useState(false);
@@ -51,6 +56,8 @@ const handleSubmit = (e) => {
   e.preventDefault();
   setLoading(true);
 
+  setSubmittedName(form.name);
+  setSubmittedEmail(form.email);
   fetch('https://portfolio-backend-3jb1.onrender.com', {
     method: 'POST',
     headers: {
@@ -64,8 +71,7 @@ const handleSubmit = (e) => {
   })
     .then((response) => {
       if (response.ok) {
-        setSubmittedName(form.name);
-        setSubmittedEmail(form.email);
+        
         open();
 
         setForm({
@@ -79,7 +85,8 @@ const handleSubmit = (e) => {
     })
     .catch((error) => {
       console.log(error);
-      alert('Failed to send email. Please try again later.');
+      openError()
+      // alert('Failed to send email. Please try again later.');
     })
     .finally(() => {
       setLoading(false);
@@ -181,6 +188,12 @@ const handleSubmit = (e) => {
       handleClose={close} 
       mobile={isMobile}
       />}
+      {isMobile && errorModal &&
+      <ErrorModal
+      name={submittedName} 
+      handleClose={closeError}
+      mobile={isMobile}
+      />}
 
       </AnimatePresence>
       </motion.div>
@@ -202,6 +215,12 @@ const handleSubmit = (e) => {
       name={submittedName} 
       email={submittedEmail} 
       handleClose={close} 
+      mobile={isMobile}
+      />}
+      {!isMobile && errorModal &&
+      <ErrorModal
+      name={submittedName} 
+      handleClose={closeError}
       mobile={isMobile}
       />}
 
