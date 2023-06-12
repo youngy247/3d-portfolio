@@ -55,7 +55,7 @@ const ErrorModalText = ({ name }) => (
         Sorry {name} I am unable to take emails at this time. Please feel free to reach out in alternative ways below:
       </h5>
       <div className="flex justify-center gap-6">
-        <a href="https://io-academy-slack.slack.com/user/@U04MY353R46" target="_blank" className="text-black text-4xl">
+        <a href="https://adam-young.slack.com" target="_blank" className="text-black text-4xl">
           <i className="fa-brands fa-slack"></i>
         </a>
         <a href="https://github.com/youngy247" target="_blank" className="text-black text-4xl">
