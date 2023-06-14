@@ -45,6 +45,23 @@ const [isMobile, setIsMobile] = useState(false);
     };
   }, []);
 
+  useEffect(() => {
+    const handleBeforeUnload = (e) => {
+      if (formRef.current) {
+        e.preventDefault();
+        e.returnValue = ''; // For Chrome compatibility
+
+        return 'Are you sure you want to leave this page? Your entered information may be lost.';
+      }
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []);
+
 const handleChange = (e) => {
   const { name, value } = e.target
 
@@ -86,7 +103,6 @@ const handleSubmit = (e) => {
     .catch((error) => {
       console.log(error);
       openError()
-      // alert('Failed to send email. Please try again later.');
     })
     .finally(() => {
       setLoading(false);
