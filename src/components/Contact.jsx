@@ -48,19 +48,30 @@ const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const handleBeforeUnload = (e) => {
       if (formRef.current) {
-        e.preventDefault();
-        e.returnValue = ''; // For Chrome compatibility
-
-        return 'Are you sure you want to leave this page? Your entered information may be lost.';
+        const isFormDirty =
+          formRef.current.name.value !== '' ||
+          formRef.current.email.value !== '' ||
+          formRef.current.message.value !== '';
+  
+        if (isFormDirty) {
+          e.preventDefault();
+          e.returnValue = '';
+          return 'Are you sure you want to leave this page? Your entered information may be lost.';
+        }
       }
     };
-
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
+  
+    if (formRef.current) {
+      window.addEventListener('beforeunload', handleBeforeUnload);
+    }
+  
     return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
+      if (formRef.current) {
+        window.removeEventListener('beforeunload', handleBeforeUnload);
+      }
     };
-  }, []);
+  }, [formRef]);
+  
 
 const handleChange = (e) => {
   const { name, value } = e.target
