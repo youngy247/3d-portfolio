@@ -55,7 +55,6 @@
 .error-modal-container{
   @media (max-width: 500px) {
     height: clamp(30%, 450px, 90vh); 
-    
   }
 }
 
