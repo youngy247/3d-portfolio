@@ -168,7 +168,7 @@ import {
     },
     {
       title: "Full Stack Track",
-      company_name: "IO Academy",
+      company_name: "iO Academy",
       icon: io,
       iconBg: "#E6DEDD",
       date: "March 2023 - Present",
