@@ -59,7 +59,7 @@ import {
       icon: mobile,
     },
     {
-      title: "IO Graduate",
+      title: "iO Graduate",
       icon: creator,
     },
     {
