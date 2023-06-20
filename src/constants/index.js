@@ -239,6 +239,10 @@ import {
           name: "restfulapi",
           color: "green-text-gradient",
         },
+        {
+          name: "OOP",
+          color: "pink-text-gradient",
+        },
       ],
       image: musicplayer,
       source_code_link: "https://github.com/iO-Academy/23-mar-icantbelieveitsnotspotify",
