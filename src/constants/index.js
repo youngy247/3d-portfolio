@@ -139,7 +139,7 @@ import {
       ],
     },
     {
-      title: "Bsc - SCRAM",
+      title: "B.Sc. - SCRAM",
       company_name: "Cardiff Metropolitean University",
       icon: cardiffmet,
       iconBg: "#E6DEDD",
