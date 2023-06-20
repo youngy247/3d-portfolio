@@ -214,7 +214,7 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "restfulapi",
           color: "green-text-gradient",
         },
         {
@@ -229,14 +229,14 @@ import {
     {
       name: "Music Player API",
       description:
-        "A rest API built in PHP for a pre-exisiting Music Player front-end. The API provides a wide range of functionalities that enable users to interact with the music player and enhance their music listening experience.",
+        "A RESTful API built in PHP for a pre-existing Music Player front-end. The API provides a wide range of functionalities that enable users to interact with the music player and enhance their music listening experience.",
       tags: [
         {
           name: "php",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "restfulapi",
           color: "green-text-gradient",
         },
       ],
