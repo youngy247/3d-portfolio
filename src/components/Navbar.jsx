@@ -23,10 +23,19 @@ const Navbar = () => {
 
   const handleAnchorClick = (link) => {
     setActive(link.title);
-    
-    const targetSection = document.getElementById(link.id); 
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: 'smooth' }); 
+  
+    if (link.id === 'form') {
+      const targetSection = document.getElementById('form');
+      if (targetSection) {
+        const offset = -82; 
+        const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset + offset;
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+      }
+    } else {
+      const targetSection = document.getElementById(link.id);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
     }
   };
 
