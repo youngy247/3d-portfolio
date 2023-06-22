@@ -21,6 +21,15 @@ const Navbar = () => {
     handleRedirect();
   }, [location.pathname, navigate]);
 
+  const handleAnchorClick = (link) => {
+    setActive(link.title);
+    
+    const targetSection = document.getElementById(link.id); 
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' }); 
+    }
+  };
+
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -46,9 +55,9 @@ const Navbar = () => {
                 active === link.title ? 'text-white' : 'text-secondary'
               } hover:text-white text-[18px] font-medium cursor-pointer`}
             >
-              <a href={`#${link.id}`} onClick={() => setActive(link.title)}>
+              <Link to={location.pathname} onClick={() => handleAnchorClick(link)}>
                 {link.title}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -73,10 +82,10 @@ const Navbar = () => {
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(link.title);
+                    handleAnchorClick(link);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  <Link to={location.pathname}>{link.title}</Link>
                 </li>
               ))}
             </ul>
