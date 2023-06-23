@@ -31,6 +31,7 @@ const LearnMore = () => {
       </motion.div>
       <div className="flex items-center justify-center h-screen">
         <iframe
+          id="nexus-iframe"
           className={isMobile ? 'w-full h-3/4' : 'w-5/6 h-3/4'}
           src="https://nexusbot-beta.netlify.app/"
           title="Adam's personal assistant chatbot Nexus"

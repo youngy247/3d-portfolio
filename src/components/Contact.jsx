@@ -54,6 +54,13 @@ const [isMobile, setIsMobile] = useState(false);
           formRef.current.message.value !== '';
   
         if (isFormDirty) {
+          const iframeExists = document.getElementById('nexus-iframe');
+          const isCurrentForm = e.target.forms[0] === formRef.current;
+  
+          if (iframeExists && !isCurrentForm) {
+            return;
+          }
+  
           e.preventDefault();
           e.returnValue = '';
           return 'Are you sure you want to leave this page? Your entered information may be lost.';
@@ -71,6 +78,8 @@ const [isMobile, setIsMobile] = useState(false);
       }
     };
   }, [formRef]);
+  
+  
   
 
 const handleChange = (e) => {
