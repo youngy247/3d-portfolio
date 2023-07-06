@@ -188,15 +188,15 @@ import {
         "Responsive wordle game in vanilla JavaScript. Players guess hidden words with adaptive UI for enjoyable gaming on any device. Intuitive gameplay and appealing design create engaging experience for all.",
       tags: [
         {
-          name: "html",
+          name: "HTML",
           color: "blue-text-gradient",
         },
         {
-          name: "css",
+          name: "CSS",
           color: "green-text-gradient",
         },
         {
-          name: "javascript",
+          name: "JavaScript",
           color: "pink-text-gradient",
         },
       ],
@@ -210,15 +210,15 @@ import {
         "A web application for users in their job search journey. With a sleek React/Bootstrap front-end, it offers a user-friendly interface for exploring and discovering customized job openings tailored to the user.",
       tags: [
         {
-          name: "react",
+          name: "React",
           color: "blue-text-gradient",
         },
         {
-          name: "restfulapi",
+          name: "RESTfulAPI",
           color: "green-text-gradient",
         },
         {
-          name: "bootstrap",
+          name: "Bootstrap",
           color: "pink-text-gradient",
         },
       ],
@@ -232,11 +232,11 @@ import {
         "A RESTful API built in PHP for a pre-existing Music Player front-end. The API provides a wide range of functionalities that enable users to interact with the music player and enhance their music listening experience.",
       tags: [
         {
-          name: "php",
+          name: "PHP",
           color: "blue-text-gradient",
         },
         {
-          name: "restfulapi",
+          name: "RESTfulAPI",
           color: "green-text-gradient",
         },
         {
@@ -258,11 +258,11 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "node",
+          name: "Node",
           color: "green-text-gradient",
         },
         {
-          name: "express",
+          name: "Express",
           color: "pink-text-gradient",
         },
       ],
