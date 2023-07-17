@@ -46,7 +46,7 @@ const Navbar = () => {
     if (link.id === 'form') {
       const targetSection = document.getElementById('form');
       if (targetSection) {
-        const offset = -10.5; 
+        const offset = -7; 
         const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY + offset;
         window.scrollTo({ top: targetPosition, behavior: 'smooth' });
       }
