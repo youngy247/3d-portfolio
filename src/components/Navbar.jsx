@@ -8,8 +8,11 @@ import { logo, menu, close } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  const [navbarVisible, setNavbarVisible] = useState(true);
   const navigate = useNavigate();
   const location = useLocation();
+
+  let scrollPosition = 0;
 
   useEffect(() => {
     const handleRedirect = () => {
@@ -20,6 +23,22 @@ const Navbar = () => {
 
     handleRedirect();
   }, [location.pathname, navigate]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPosition = window.pageYOffset;
+      if (currentScrollPosition < scrollPosition) {
+        setNavbarVisible(true);
+      } else if (currentScrollPosition > 100) { // Hide after scrolling down 100px
+        setNavbarVisible(false);
+      }
+      scrollPosition = currentScrollPosition;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleAnchorClick = (link) => {
     setActive(link.title);
@@ -40,7 +59,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary ${navbarVisible ? '' : 'hidden'}`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
