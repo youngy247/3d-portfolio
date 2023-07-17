@@ -121,7 +121,6 @@ const handleSubmit = (e) => {
       }
     })
     .catch((error) => {
-      console.log(error);
       openError()
     })
     .finally(() => {
