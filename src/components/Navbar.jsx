@@ -26,7 +26,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPosition = window.pageYOffset;
+      const currentScrollPosition = window.scrollY;
       if (currentScrollPosition < scrollPosition) {
         setNavbarVisible(true);
       } else if (currentScrollPosition > 100) { // Hide after scrolling down 100px
@@ -47,7 +47,7 @@ const Navbar = () => {
       const targetSection = document.getElementById('form');
       if (targetSection) {
         const offset = -82; 
-        const targetPosition = targetSection.getBoundingClientRect().top + window.pageYOffset + offset;
+        const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY + offset;
         window.scrollTo({ top: targetPosition, behavior: 'smooth' });
       }
     } else {
