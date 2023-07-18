@@ -42,22 +42,19 @@ const Navbar = () => {
 
   const handleAnchorClick = (link) => {
     setActive(link.title);
+    
+    let offset;
+    if (link.id === 'form') offset = 2;
+    else if (link.id === 'about' && window.innerWidth >= 1800) offset = 15.45;
+    else offset = 120;
   
-    if (link.id === 'form') {
-      const targetSection = document.getElementById('form');
-      if (targetSection) {
-        const offset = 2; 
-        const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY + offset;
-        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-      }
-    } else {
-      const targetSection = document.getElementById(link.id);
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-      }
+    const targetSection = document.getElementById(link.id);
+    if (targetSection) {
+      const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY + offset;
+      window.scrollTo({ top: targetPosition, behavior: 'smooth' });
     }
   };
-
+  
   return (
     <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary ${navbarVisible ? '' : 'hidden'}`}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
