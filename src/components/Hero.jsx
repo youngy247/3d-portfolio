@@ -9,7 +9,7 @@ const Hero = () => {
     event.preventDefault();
     const targetSection = document.getElementById('about');
     if (targetSection) {
-      const isSmallScreen = window.innerWidth <= 1800; // Change the screen size threshold if needed
+      const isSmallScreen = window.innerWidth <= 1800; 
       const offset = isSmallScreen ? 120 : 15.45;
       const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY + offset;
       window.scrollTo({ top: targetPosition, behavior: 'smooth' });
