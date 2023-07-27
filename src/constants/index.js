@@ -274,7 +274,7 @@ import {
     {
       name: "Insect Inspect",
       description:
-        "An Ionic and Capacitor developed cross-platform app that allows users to record, share, and explore global insect, animal, and plant sightings. Leveraging Google Maps and the iNaturalist API, the app uses Firebase for data handling, fostering community involvement in global biodiversity conservation.",
+        "An Ionic and Capacitor developed cross-platform app that allows users to record, share, and explore global animal and plant sightings. Leveraging Google Maps and the iNaturalist API, the app uses Firebase for data handling, fostering community involvement in global biodiversity conservation.",
       tags: [
         {
           name: "Ionic",
