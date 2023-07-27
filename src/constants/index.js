@@ -23,6 +23,7 @@ import {
     jobsearch,
     musicplayer,
     nexus,
+    insectinspect,
     threejs,
   } from "../assets";
   
@@ -251,7 +252,7 @@ import {
     {
       name: "Nexus Chatbot",
       description:
-        "An AI-powered chatbot inspired by ChatGPT that connects to the OpenAI API currently in beta training to be my personal assistant. Built using JavaScript on the client side and Node.js with Express.js on the server side. ",
+        "A personal assistant AI chatbot, inspired by ChatGPT and powered by OpenAI API, JavaScript, Node.js, and Express.js, delivers dynamic insights into my skills, projects, and experiences as a recent software engineering graduate, serving as an interactive, AI-enhanced portfolio. ",
       tags: [
         {
           name: "JavaScript",
@@ -269,6 +270,28 @@ import {
       image: nexus,
       source_code_link: "https://github.com/youngy247/nexus-bot",
       live_code_link: "https://nexusbot-beta.netlify.app/",
+    },
+    {
+      name: "Insect Inspect",
+      description:
+        "An Ionic and Capacitor developed cross-platform app that allows users to record, share, and explore global insect, animal, and plant sightings. Leveraging Google Maps and the iNaturalist API, the app uses Firebase for data handling, fostering community involvement in global biodiversity conservation.",
+      tags: [
+        {
+          name: "Ionic",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Capacitor",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Firebase",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: insectinspect,
+      source_code_link: "https://github.com/youngy247/ionic-capacitor-tutorial",
+      live_code_link: "https://insectinspect.netlify.app/",
     },
   ];
   

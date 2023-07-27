@@ -31,6 +31,7 @@ import wordle from "./wordle.png";
 import jobsearch from "./jobsearch.png";
 import musicplayer from "./musicplayer.png";
 import nexus from "./nexus.png";
+import insectinspect from "./insectinspect.png"
 
 export {
   logo,
@@ -63,4 +64,5 @@ export {
   jobsearch,
   musicplayer,
   nexus,
+  insectinspect,
 };
