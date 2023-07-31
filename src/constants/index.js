@@ -272,9 +272,9 @@ import {
       live_code_link: "https://nexusbot-beta.netlify.app/",
     },
     {
-      name: "Insect Inspect",
+      name: "InsectInspect",
       description:
-        "An Ionic and Capacitor developed cross-platform app that allows users to record, share, and explore global animal and plant sightings. Leveraging Google Maps and the iNaturalist API, the app uses Firebase for data handling, fostering community involvement in global biodiversity conservation.",
+        "An Ionic and Capacitor developed cross-platform app that allows users to record, share, and explore global animal and plant sightings. The app uses Google Maps, the iNaturalist API, and Google Vision API for interactive species detection. Leveraging Firebase for data handling, it provides a unique and engaging experience for users interested in biodiversity.",
       tags: [
         {
           name: "Ionic",
