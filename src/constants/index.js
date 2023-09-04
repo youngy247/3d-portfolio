@@ -226,7 +226,6 @@ const projects = [
     image: jobsearch,
     source_code_link:
       "https://github.com/iO-Academy/23-mar-icantbelieveitsnotmonster",
-    live_code_link: "https://23-mar-icantbelieveitsnotmonster.netlify.app/",
   },
   {
     name: "Music Player API",
@@ -249,7 +248,6 @@ const projects = [
     image: musicplayer,
     source_code_link:
       "https://github.com/iO-Academy/23-mar-icantbelieveitsnotspotify",
-    live_code_link: "https://23-mar-icantbelieveitsnotspotify.netlify.app/",
   },
   {
     name: "Nexus Chatbot",
