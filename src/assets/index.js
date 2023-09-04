@@ -32,6 +32,7 @@ import jobsearch from "./jobsearch.png";
 import musicplayer from "./musicplayer.png";
 import nexus from "./nexus.png";
 import insectinspect from "./insectinspect.png"
+import chaindetective from "./chain-detective.png"
 
 export {
   logo,
@@ -65,4 +66,5 @@ export {
   musicplayer,
   nexus,
   insectinspect,
+  chaindetective,
 };
