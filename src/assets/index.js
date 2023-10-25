@@ -4,7 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
-import live from "./live.png"
+import live from "./live.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -23,6 +23,7 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import io from "./company/io.png";
+import cd from "./company/cd.png";
 import logic from "./company/logic.png";
 import crosskeys from "./company/crosskeys.png";
 import cardiffmet from "./company/cardiffmet.png";
@@ -31,8 +32,8 @@ import wordle from "./wordle.png";
 import jobsearch from "./jobsearch.png";
 import musicplayer from "./musicplayer.png";
 import nexus from "./nexus.png";
-import insectinspect from "./insectinspect.png"
-import chaindetective from "./chain-detective.png"
+import insectinspect from "./insectinspect.png";
+import chaindetective from "./chain-detective.png";
 
 export {
   logo,
@@ -58,6 +59,7 @@ export {
   typescript,
   threejs,
   io,
+  cd,
   logic,
   crosskeys,
   cardiffmet,

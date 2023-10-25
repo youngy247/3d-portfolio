@@ -16,6 +16,8 @@ import {
   figma,
   docker,
   io,
+  cd,
+  chaindetective,
   crosskeys,
   cardiffmet,
   logic,
@@ -24,7 +26,6 @@ import {
   musicplayer,
   nexus,
   insectinspect,
-  chaindetective,
   threejs,
 } from "../assets";
 
@@ -172,12 +173,25 @@ const experiences = [
     company_name: "iO Academy",
     icon: io,
     iconBg: "#E6DEDD",
-    date: "March 2023 - Present",
+    date: "March 2023 - June 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborated seamlessly with cross-functional teams, including designers, product managers, and fellow developers, to create high-quality products that not only met but surpassed client expectations.",
       "Implemented responsive design techniques, ensuring a seamless user experience across various devices and screen sizes, while ensuring cross-browser compatibility to maximize accessibility.",
       "Actively participated in code reviews, providing constructive feedback and implementing improvements that elevated the overall quality of the codebase, leading to enhanced client satisfaction and project success.",
+    ],
+  },
+  {
+    title: "Software Developer",
+    company_name: "Chain Detective",
+    icon: cd,
+    iconBg: "#383E56",
+    date: "June 2023 - Present",
+    points: [
+      "Lead mobile app development, enhancing user experience and performance.",
+      "Play a key role in front-end and back-end, integrating UI with data processes.",
+      "Utilise Ethereum node and Uniswap data for platform capabilities to provide detailed insights for DeFi users.",
+      "Engage in daily meetings and code reviews, maintaining product quality and promoting team cohesion.",
     ],
   },
 ];
