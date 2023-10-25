@@ -41,10 +41,10 @@ export const navLinks = [
     id: "projects",
     title: "Projects",
   },
-  {
-    id: "learn",
-    title: "Learn More",
-  },
+  // {
+  //   id: "learn",
+  //   title: "Learn More",
+  // },
   {
     id: "form",
     title: "Contact",
@@ -269,7 +269,7 @@ const projects = [
     ],
     image: nexus,
     source_code_link: "https://github.com/youngy247/nexus-bot",
-    live_code_link: "https://nexusbot-beta.netlify.app/",
+    // live_code_link: "https://nexusbot-beta.netlify.app/",
   },
   {
     name: "InsectInspect",
