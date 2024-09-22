@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { github } from "../assets";
+import { google_play } from "../assets";
 import { live } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
@@ -16,6 +17,8 @@ const ProjectCard = ({
   image,
   source_code_link,
   live_code_link,
+  apple_store_link,
+  google_play_link,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -42,6 +45,19 @@ const ProjectCard = ({
                 <img
                   src={live}
                   alt="Live link"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            )}
+
+            {google_play_link && (
+              <div
+                onClick={() => window.open(google_play_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <img
+                  src={google_play}
+                  alt="Google play link"
                   className="w-1/2 h-1/2 object-contain"
                 />
               </div>

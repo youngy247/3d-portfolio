@@ -355,6 +355,8 @@ const projects = [
     ],
     image: chaindetective,
     live_code_link: "https://chain-detective.com",
+    google_play_link:
+      "https://play.google.com/store/apps/details?id=com.youngy247.chaindetectivemobile&hl=en&gl=US&pli=1",
   },
 ];
 
