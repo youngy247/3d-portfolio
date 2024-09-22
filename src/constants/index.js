@@ -17,6 +17,8 @@ import {
   docker,
   io,
   cd,
+  cms_logo,
+  supernova_logo,
   chaindetective,
   crosskeys,
   cardiffmet,
@@ -54,11 +56,11 @@ export const navLinks = [
 
 const services = [
   {
-    title: "SCRAM Graduate",
+    title: "Mobile Developer",
     icon: backend,
   },
   {
-    title: "Transport Planner",
+    title: "Games Developer",
     icon: mobile,
   },
   {
@@ -186,12 +188,38 @@ const experiences = [
     company_name: "Chain Detective",
     icon: cd,
     iconBg: "#383E56",
-    date: "June 2023 - Present",
+    date: "June 2023 - December 2023",
     points: [
       "Lead mobile app development, enhancing user experience and performance.",
       "Play a key role in front-end and back-end, integrating UI with data processes.",
       "Utilise Ethereum node and Uniswap data for platform capabilities to provide detailed insights for DeFi users.",
       "Engage in daily meetings and code reviews, maintaining product quality and promoting team cohesion.",
+    ],
+  },
+  {
+    title: "Online Games Developer",
+    company_name: "CMS Gaming",
+    icon: cms_logo,
+    iconBg: "#383E56",
+    date: "December 2023 - Present",
+    points: [
+      "Game Ideation: Collaborating with the design team to brainstorm and develop new game ideas, including main game effects and bonus games.",
+      "Workflow Optimisation: Implementing improvements in the development workflow, notably enhancing the client build process, reducing build times during development by a factor of 10.",
+      "Bug Fixing: Diagnosing and resolving complex issues to ensure a seamless gaming experience.",
+      "Library Upgrades: Upgrading libraries to new versions to leverage the latest features and performance enhancements.",
+      "Solo Development: Designing and developing a group expense splitting mobile app independently, taking full responsibility for its implementation and performance.",
+    ],
+  },
+  {
+    title: "Front-End Developer",
+    company_name: "Supernova Dental",
+    icon: supernova_logo,
+    iconBg: "#383E56",
+    date: "Contract - Q4 2024 Launch",
+    points: [
+      "Developed a dynamic website for Supernova Dental, a new dental practice, using Next.js, targeting local SEO to drive patient acquisition from day one with a scalable, future-proof architecture designed to support the practice’s long-term digital growth.",
+      "Set the foundation for an enhanced patient journey and improved conversion potential by implementing well-structured calls to action, internal linking strategies, and engaging animations using Framer Motion.",
+      "Integrated WordPress as a headless CMS for seamless management of blog and gallery content, enabling efficient updates for the client.",
     ],
   },
 ];

@@ -24,6 +24,8 @@ import threejs from "./tech/threejs.svg";
 
 import io from "./company/io.png";
 import cd from "./company/cd.png";
+import cms_logo from "./company/cms_logo.png";
+import supernova_logo from "./company/supernova_logo.png";
 import logic from "./company/logic.png";
 import crosskeys from "./company/crosskeys.png";
 import cardiffmet from "./company/cardiffmet.png";
@@ -60,6 +62,8 @@ export {
   threejs,
   io,
   cd,
+  cms_logo,
+  supernova_logo,
   logic,
   crosskeys,
   cardiffmet,
