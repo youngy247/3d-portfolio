@@ -53,10 +53,10 @@ const About = () => {
         variants={fadeIn("", "", 0.2, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        At CMS Gaming, I collaborated closely with design teams to brainstorm
+        At CMS Gaming, I collaborate closely with design teams to brainstorm
         and implement innovative game ideas, optimized build workflows to
         drastically reduce development time, and ensured seamless gameplay by
-        fixing complex bugs. Additionally, I upgraded libraries to enhance
+        fixing complex bugs. Additionally, I upgrade libraries to enhance
         performance and stability across projects.
       </motion.p>
       <motion.p
