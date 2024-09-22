@@ -17,7 +17,6 @@ const ProjectCard = ({
   image,
   source_code_link,
   live_code_link,
-  apple_store_link,
   google_play_link,
 }) => {
   return (
