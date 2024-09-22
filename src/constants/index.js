@@ -129,34 +129,34 @@ const technologies = [
 ];
 
 const experiences = [
-  {
-    title: "BTEC Sport",
-    company_name: "Coleg Gwent - Crosskeys Campus",
-    icon: crosskeys,
-    iconBg: "#383E56",
-    date: "September 2017 - July 2019",
-    points: [
-      "Learnt the principles of sports science, anatomy, physiology, nutrition, and fitness training.",
-      "Covered fundamentals of coaching principles and sports psychology.",
-      "Analyzed sports performance and applied sports analysis techniques.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-      "While attending the Coleg Gwent rugby academy gained my first cap for Wales Rugby League at 16",
-    ],
-  },
-  {
-    title: "B.Sc. - SCRAM",
-    company_name: "Cardiff Metropolitean University",
-    icon: cardiffmet,
-    iconBg: "#E6DEDD",
-    date: "Sept 2019 - July 2022",
-    points: [
-      "Principles of sports conditioning and performance enhancement techniques.",
-      "Assessment and analysis of movement patterns and biomechanics.",
-      "Application of manual therapy and corrective exercises for injury management.",
-      "Gained grant for high scoring mark in year 1",
-      "Carried out dissertation in 'Is Bilateral or Unilateral squat better correlated with change of direction speed with university athletes'",
-    ],
-  },
+  // {
+  //   title: "BTEC Sport",
+  //   company_name: "Coleg Gwent - Crosskeys Campus",
+  //   icon: crosskeys,
+  //   iconBg: "#383E56",
+  //   date: "September 2017 - July 2019",
+  //   points: [
+  //     "Learnt the principles of sports science, anatomy, physiology, nutrition, and fitness training.",
+  //     "Covered fundamentals of coaching principles and sports psychology.",
+  //     "Analyzed sports performance and applied sports analysis techniques.",
+  //     "Participating in code reviews and providing constructive feedback to other developers.",
+  //     "While attending the Coleg Gwent rugby academy gained my first cap for Wales Rugby League at 16",
+  //   ],
+  // },
+  // {
+  //   title: "B.Sc. - SCRAM",
+  //   company_name: "Cardiff Metropolitean University",
+  //   icon: cardiffmet,
+  //   iconBg: "#E6DEDD",
+  //   date: "Sept 2019 - July 2022",
+  //   points: [
+  //     "Principles of sports conditioning and performance enhancement techniques.",
+  //     "Assessment and analysis of movement patterns and biomechanics.",
+  //     "Application of manual therapy and corrective exercises for injury management.",
+  //     "Gained grant for high scoring mark in year 1",
+  //     "Carried out dissertation in 'Is Bilateral or Unilateral squat better correlated with change of direction speed with university athletes'",
+  //   ],
+  // },
   {
     title: "Transport Planner",
     company_name: "Logic Freight",
