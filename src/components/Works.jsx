@@ -1,15 +1,15 @@
-import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
 
-import { styles } from "../styles";
-import { github } from "../assets";
-import { google_play } from "../assets";
-import { live } from "../assets";
-import { SectionWrapper } from "../hoc";
+import { useEffect, useState } from "react";
+import { github, google_play, live } from "../assets";
 import { projects } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
+  isMobile,
   index,
   name,
   description,
@@ -23,13 +23,14 @@ const ProjectCard = ({
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
+          tiltEnable: window.innerWidth > 768, // Disable on small screens
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[320px] w-full"
+        className="bg-tertiary p-5 rounded-2xl h-[246px] md:h-[375px] max-w-[250px] md:max-w-[320px] "
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-auto h-[120px] md:h-[180px]">
           <img
             src={image}
             alt={name}
@@ -77,24 +78,46 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        <div className="mt-4">
+          <h3 className="text-white font-bold text-[14px] md:text-[24px]">
+            {name}
+          </h3>
+          <p className="mt-1 text-secondary text-[12px] md:text-[14px]">
+            {description}
+          </p>
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
-          {tags.map((tag) => (
-            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-              #{tag.name}
-            </p>
-          ))}
-        </div>
+        {!isMobile && (
+          <div className="mt-4 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <p key={tag.name} className={`text-[12px] ${tag.color}`}>
+                #{tag.name}
+              </p>
+            ))}
+          </div>
+        )}
       </Tilt>
     </motion.div>
   );
 };
 
 const Works = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 767px)");
+
+    setIsMobile(mediaQuery.matches);
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -105,20 +128,21 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3x1 leading-[30px]"
+          className="mt-3 text-secondary text-[14px] md:text-[17px] max-w-3x1 leading-[20px] md:leading-[30px]"
         >
-          My portfolio features a collection of projects that demonstrate my
-          skills and expertise with real-world examples. Each project is
-          accompanied by a brief description and includes links to the code
-          repositories and live demos. These projects serve as evidence of my
-          capability to tackle complex problems, proficiency with various
-          technologies and effective project management.
+          Each project includes a brief description, code links, and live demos,
+          showcasing individual and group projects.
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 justify-center items-center lg:grid-cols-3 gap-7 mx-auto place-items-center">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            isMobile={isMobile}
+            {...project}
+          />
         ))}
       </div>
     </>
