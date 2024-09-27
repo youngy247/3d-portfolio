@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 
@@ -32,8 +32,8 @@ const Hero = () => {
 
       <ComputersCanvas />
 
-      <div className="absolute xs:bottom-5 
-      bottom-32 w-full flex justify-center 
+      <div className="absolute 
+      bottom-8 w-full flex justify-center 
       items-center">
         <Link to="/about" onClick={handleAnchorClick}> 
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary
