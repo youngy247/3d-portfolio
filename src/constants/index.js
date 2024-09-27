@@ -1,34 +1,34 @@
 import {
-  mobile,
   backend,
-  creator,
-  web,
-  javascript,
-  typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  io,
-  cd,
-  cms_logo,
-  supernova_logo,
-  chaindetective,
-  crosskeys,
   cardiffmet,
-  logic,
-  wordle,
+  cd,
+  chaindetective,
+  cms_logo,
+  creator,
+  crosskeys,
+  css,
+  docker,
+  figma,
+  git,
+  html,
+  insectinspect,
+  io,
+  javascript,
   jobsearch,
+  logic,
+  mobile,
+  mongodb,
   musicplayer,
   nexus,
-  insectinspect,
+  nodejs,
+  reactjs,
+  redux,
+  supernova_logo,
+  tailwind,
   threejs,
+  typescript,
+  web,
+  wordle,
 } from "../assets";
 
 export const navLinks = [
@@ -228,42 +228,24 @@ const projects = [
   {
     name: "Wordle Clone",
     description:
-      "Responsive wordle game in vanilla JavaScript. Players guess hidden words with adaptive UI for enjoyable gaming on any device. Intuitive gameplay and appealing design create engaging experience for all.",
+      "A responsive Wordle game in vanilla JavaScript with an adaptive UI for all devices.",
     tags: [
-      {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "pink-text-gradient",
-      },
+      { name: "HTML", color: "blue-text-gradient" },
+      { name: "CSS", color: "green-text-gradient" },
+      { name: "JavaScript", color: "pink-text-gradient" },
     ],
     image: wordle,
     source_code_link: "https://github.com/iO-Academy/2023-mar-wordle",
     live_code_link: "https://23-mar-wordgame.dev.io-academy.uk/",
   },
   {
-    name: "Job Search React App",
+    name: "Job Search App",
     description:
-      "A web application for users in their job search journey. With a sleek React/Bootstrap front-end, it offers a user-friendly interface for exploring and discovering customized job openings tailored to the user.",
+      "React/Bootstrap front-end and customized job listings.",
     tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "RESTfulAPI",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "pink-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "RESTfulAPI", color: "green-text-gradient" },
+      { name: "Bootstrap", color: "pink-text-gradient" },
     ],
     image: jobsearch,
     source_code_link:
@@ -272,20 +254,11 @@ const projects = [
   {
     name: "Music Player API",
     description:
-      "A RESTful API built in PHP for a pre-existing Music Player front-end. The API provides a wide range of functionalities that enable users to interact with the music player and enhance their music listening experience.",
+      "A PHP-built RESTful API for a music player, enhancing user interaction.",
     tags: [
-      {
-        name: "PHP",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "RESTfulAPI",
-        color: "green-text-gradient",
-      },
-      {
-        name: "OOP",
-        color: "pink-text-gradient",
-      },
+      { name: "PHP", color: "blue-text-gradient" },
+      { name: "RESTfulAPI", color: "green-text-gradient" },
+      { name: "OOP", color: "pink-text-gradient" },
     ],
     image: musicplayer,
     source_code_link:
@@ -294,42 +267,23 @@ const projects = [
   {
     name: "Nexus Chatbot",
     description:
-      "A personal assistant AI chatbot, inspired by ChatGPT and powered by OpenAI API, JavaScript, Node.js, and Express.js, delivers dynamic insights into my skills, projects, and experiences as a recent software engineering graduate, serving as an interactive, AI-enhanced portfolio. ",
+      "An AI chatbot powered by OpenAI, showcasing skills, projects, and experiences.",
     tags: [
-      {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Node",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Express",
-        color: "pink-text-gradient",
-      },
+      { name: "JavaScript", color: "blue-text-gradient" },
+      { name: "Node", color: "green-text-gradient" },
+      { name: "Express", color: "pink-text-gradient" },
     ],
     image: nexus,
     source_code_link: "https://github.com/youngy247/nexus-bot",
-    // live_code_link: "https://nexusbot-beta.netlify.app/",
   },
   {
     name: "InsectInspect",
     description:
-      "An Ionic and Capacitor developed cross-platform app that allows users to record, share, and explore global animal and plant sightings. The app uses Google Maps, the iNaturalist API, and Google Vision API for interactive species detection. Leveraging Firebase for data handling, it provides a unique and engaging experience for users interested in biodiversity.",
+      "A cross-platform app using APIs for species detection and Firebase for data.",
     tags: [
-      {
-        name: "Ionic",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Capacitor",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Firebase",
-        color: "pink-text-gradient",
-      },
+      { name: "Ionic", color: "blue-text-gradient" },
+      { name: "Capacitor", color: "green-text-gradient" },
+      { name: "Firebase", color: "pink-text-gradient" },
     ],
     image: insectinspect,
     source_code_link: "https://github.com/youngy247/ionic-capacitor-tutorial",
@@ -338,26 +292,17 @@ const projects = [
   {
     name: "Chain Detective",
     description:
-      "Led mobile app development and contributed to the web app and AI-backed backend for an analytics platform, built on our self-hosted Ethereum node. This ensured data autonomy, reducing third-party dependencies. The platform indexed Uniswap's trade events, providing DeFi enthusiasts with real-time insights and data precision.",
+      "Led mobile development for an analytics platform, indexing Uniswap trade events.",
     tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "React Native",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Ethereum",
-        color: "pink-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "React Native", color: "green-text-gradient" },
+      { name: "Ethereum", color: "pink-text-gradient" },
     ],
     image: chaindetective,
     live_code_link: "https://chain-detective.com",
     google_play_link:
-      "https://play.google.com/store/apps/details?id=com.youngy247.chaindetectivemobile&hl=en&gl=US&pli=1",
+      "https://play.google.com/store/apps/details?id=com.youngy247.chaindetectivemobile",
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { experiences, projects, services, technologies };
